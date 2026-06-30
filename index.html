@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>MonicaVerse | Explore Every Frame</title>
+
+    
+
+    <meta name="description"
+        content="MonicaVerse is a luxurious gallery destination, artfully designed and lovingly created by Monica Raghini Chelle with HTML, CSS, and JavaScript.">
+
+    <meta name="keywords"
+        content="MonicaVerse, image gallery, premium UI, HTML, CSS, JavaScript, portfolio">
+
+    
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+        rel="stylesheet">
+
+    
+
+    <link rel="stylesheet"
+        href="css/style.css">
+
+    <link rel="stylesheet"
+        href="css/animations.css">
+
+    <link rel="stylesheet"
+        href="css/responsive.css">
+
+</head>
+
+
+<body>
+
+    
+
+    <div id="loader">
+
+        <div class="loader-content">
+
+            <div class="loader-logo">
+                MV
+            </div>
+
+            <h2>MonicaVerse</h2>
+
+            <p>Loading Gallery...</p>
+
+        </div>
+
+    </div>
+
+    
+
+    <header class="header">
+
+        <nav class="navbar container">
+
+            
+
+            <a href="#"
+                class="logo">
+
+                <div class="logo-icon">
+                    M
+                </div>
+
+                <div class="logo-text">
+
+                    <h2>MonicaVerse</h2>
+
+                    <span>Explore Every Frame</span>
+
+                </div>
+
+            </a>
+
+            
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="#home"
+                        class="active">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#gallery">
+                        Gallery
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#categories">
+                        Categories
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#about">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#favorites">
+                        Favorites
+                    </a>
+                </li>
+
+            </ul>
+
+            
+
+            <div class="nav-actions">
+
+                
+
+                <div class="search-box">
+
+                    <i class="ri-search-line"></i>
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Search images...">
+
+                </div>
+
+                
+
+                <button
+                    class="icon-btn"
+                    id="favoriteToggle">
+
+                    <i class="ri-heart-line"></i>
+
+                </button>
+
+                
+
+                <button
+                    class="icon-btn"
+                    id="themeToggle">
+
+                    <i class="ri-moon-clear-line"></i>
+
+                </button>
+
+                
+
+                <button
+                    class="menu-btn"
+                    id="menuBtn">
+
+                    <i class="ri-menu-line"></i>
+
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    
+
+    <main>
+
+        <section
+            class="hero"
+            id="home">
+
+            <div class="hero-slideshow" aria-label="Hero slideshow">
+                <div class="hero-slide is-active">
+                    <img src="images/hero/hero1.png" alt="Hero slide 1">
+                </div>
+                <div class="hero-slide">
+                    <img src="images/hero/hero2.png" alt="Hero slide 2">
+                </div>
+                <div class="hero-slide">
+                    <img src="images/hero/hero3.png" alt="Hero slide 3">
+                </div>
+                <div class="hero-slide">
+                    <img src="images/hero/hero4.png" alt="Hero slide 4">
+                </div>
+                <div class="hero-slide">
+                    <img src="images/hero/hero5.png" alt="Hero slide 5">
+                </div>
+
+                <button class="hero-nav hero-nav-prev" type="button" aria-label="Previous slide">
+                    <i class="ri-arrow-left-s-line"></i>
+                </button>
+
+                <button class="hero-nav hero-nav-next" type="button" aria-label="Next slide">
+                    <i class="ri-arrow-right-s-line"></i>
+                </button>
+
+                <div class="hero-dots" aria-label="Slide indicators">
+                    <button class="hero-dot is-active" type="button" data-slide="0" aria-label="Go to slide 1"></button>
+                    <button class="hero-dot" type="button" data-slide="1" aria-label="Go to slide 2"></button>
+                    <button class="hero-dot" type="button" data-slide="2" aria-label="Go to slide 3"></button>
+                    <button class="hero-dot" type="button" data-slide="3" aria-label="Go to slide 4"></button>
+                    <button class="hero-dot" type="button" data-slide="4" aria-label="Go to slide 5"></button>
+                </div>
+            </div>
+
+            
+
+            <div class="hero-overlay"></div>
+
+            
+
+            <span class="circle one"></span>
+
+            <span class="circle two"></span>
+
+            <span class="circle three"></span>
+
+            <div class="container hero-wrapper">
+
+                
+
+                <div class="hero-content">
+
+                    <span class="hero-tag">
+
+                        Welcome to MonicaVerse
+
+                    </span>
+
+                    <h1>
+
+                        Explore Every
+
+                        <span>Stunning Moment</span>
+
+                    </h1>
+
+                    <p>
+
+                        Discover beautiful images from Anime, Pokémon,
+                        Cartoons, Nature, Space, Travel, Technology,
+                        Architecture, Cars, Wildlife, Food, Ocean and Mountains.
+
+                    </p>
+
+                    
+
+                    <div class="hero-buttons">
+
+                        <a href="#gallery"
+                            class="btn btn-primary">
+
+                            Explore Gallery
+
+                            <i class="ri-arrow-right-line"></i>
+
+                        </a>
+
+                        <a href="#favorites"
+                            class="btn btn-secondary">
+
+                            My Favorites
+
+                            <i class="ri-heart-line"></i>
+
+                        </a>
+
+                    </div>
+
+                    <div class="hero-stats">
+                        <article class="stat-card">
+                            <h3>13</h3>
+                            <p>Categories</p>
+                        </article>
+                        <article class="stat-card">
+                            <h3>65</h3>
+                            <p>Images</p>
+                        </article>
+                        <article class="stat-card">
+                            <h3>100%</h3>
+                            <p>Responsive</p>
+                        </article>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        
+
+        <section class="categories" id="categories">
+
+            <div class="container">
+
+                <div class="category-wrapper" id="categoryFilters">
+
+                    <button class="category-pill active"
+                        data-category="all">
+                        <div class="pill-icon"><i class="ri-layout-grid-line"></i></div>
+                        <span>All</span>
+                    </button>
+
+                    <button class="category-pill"
+                        data-category="anime">
+                        <div class="pill-icon"><i class="ri-emotion-line"></i></div>
+                        <span>Anime</span>
+                    </button>
+
+                    <button class="category-pill"
+                        data-category="pokemon">
+                        <div class="pill-icon"><i class="ri-star-line"></i></div>
+                        <span>Pokémon</span>
+                    </button>
+
+                    <button class="category-pill"
+                        data-category="cartoons">
+                        <div class="pill-icon"><i class="ri-emotion-happy-line"></i></div>
+                        <span>Cartoons</span>
+                    </button>
+
+                    <button class="category-pill"
+                        data-category="nature">
+                        <div class="pill-icon"><i class="ri-leaf-line"></i></div>
+                        <span>Nature</span>
+                    </button>
+
+                    <button class="category-pill"
+                        data-category="space">
+                        <div class="pill-icon"><i class="ri-planet-line"></i></div>
+                        <span>Space</span>
+                    </button>
+
+                    <button class="category-pill"
+                        data-category="travel">
+                        <div class="pill-icon"><i class="ri-map-pin-2-line"></i></div>
+                        <span>Travel</span>
+                    </button>
+
+                    <button class="category-pill"
+                        data-category="technology">
+                        <div class="pill-icon"><i class="ri-cpu-line"></i></div>
+                        <span>Technology</span>
+                    </button>
+
+                    <button class="category-pill"
+                        data-category="architecture">
+                        <div class="pill-icon"><i class="ri-building-4-line"></i></div>
+                        <span>Architecture</span>
+                    </button>
+
+                    <button class="category-pill"
+                        data-category="cars">
+                        <div class="pill-icon"><i class="ri-car-line"></i></div>
+                        <span>Cars</span>
+                    </button>
+
+                    <button class="category-pill"
+                        data-category="wildlife">
+                        <div class="pill-icon"><i class="ri-bear-smile-line"></i></div>
+                        <span>Wildlife</span>
+                    </button>
+
+                    <button class="category-pill"
+                        data-category="food">
+                        <div class="pill-icon"><i class="ri-restaurant-2-line"></i></div>
+                        <span>Food</span>
+                    </button>
+
+                    <button class="category-pill"
+                        data-category="ocean">
+                        <div class="pill-icon"><i class="ri-water-flash-line"></i></div>
+                        <span>Ocean</span>
+                    </button>
+
+                    <button class="category-pill"
+                        data-category="mountains">
+                        <div class="pill-icon"><i class="ri-tree-line"></i></div>
+                        <span>Mountains</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="favorites-anchor" id="favorites"></section>
+
+        
+
+        <section
+            class="gallery"
+            id="gallery">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span class="section-tag">
+
+                        Featured Collection
+
+                    </span>
+
+                    <h2>
+
+                        Discover Beautiful Images
+
+                    </h2>
+
+                    <p>
+
+                        Carefully curated premium collections from around the
+                        world.
+
+                    </p>
+
+                </div>
+
+                <div class="gallery-toolbar">
+
+                    <div class="gallery-status">
+                        <p>Showing featured collections from every category</p>
+                    </div>
+
+                    <div class="sort-select">
+                        <span>Sort by</span>
+                        <select>
+                            <option value="latest">Latest</option>
+                            <option value="popular">Most Popular</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="gallery-grid" id="galleryGrid"></div>
+
+                
+
+                <div class="load-more">
+
+                    <button
+                        id="loadMoreBtn"
+                        class="btn btn-primary">
+
+                        Load More Images
+
+                        <i class="ri-add-circle-line"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        
+
+        <section class="features" id="features">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span class="section-tag">
+                        Why MonicaVerse
+                    </span>
+
+                    <h2>
+                        Premium Features
+                    </h2>
+
+                    <p>
+                        Built with modern UI principles and interactive
+                        experiences.
+                    </p>
+
+                </div>
+
+                <div class="features-grid">
+
+                    <article class="feature-card">
+                        <i class="ri-smartphone-line"></i>
+                        <h3>Responsive</h3>
+                        <p>Perfect on Desktop, Tablet and Mobile.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <i class="ri-image-line"></i>
+                        <h3>Lightbox</h3>
+                        <p>Fullscreen image viewer with navigation.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <i class="ri-search-eye-line"></i>
+                        <h3>Live Search</h3>
+                        <p>Find images instantly.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <i class="ri-filter-3-line"></i>
+                        <h3>Filters</h3>
+                        <p>Browse images category wise.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <i class="ri-heart-3-line"></i>
+                        <h3>Favorites</h3>
+                        <p>Save your favourite images.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <i class="ri-moon-clear-line"></i>
+                        <h3>Dark Mode</h3>
+                        <p>Elegant premium dark interface.</p>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        
+
+        <section class="about" id="about">
+
+            <div class="container about-content">
+
+                <span class="section-tag">
+                    About MonicaVerse
+                </span>
+
+                <h2>
+                    Explore Every Frame
+                </h2>
+
+                <p>
+
+                    MonicaVerse is a refined visual gallery built with HTML5, CSS3, and Vanilla JavaScript.
+                    It delivers a polished browsing experience with elegant design, responsive layouts,
+                    smooth interactions, category filtering, instant search, and immersive lightbox viewing.
+
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div>
+
+                <div class="footer-logo">
+
+                    <div class="logo-icon">
+                        M
+                    </div>
+
+                    <div>
+
+                        <h2>MonicaVerse</h2>
+
+                        <span>Explore Every Frame</span>
+
+                    </div>
+
+                </div>
+
+                <p>
+
+                MonicaVerse is a luxurious gallery destination, artfully designed and lovingly created by Monica Raghini Chelle with HTML, CSS, and JavaScript.
+
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="#home">Home</a></li>
+
+                    <li><a href="#gallery">Gallery</a></li>
+
+                    <li><a href="#features">Features</a></li>
+
+                    <li><a href="#about">About</a></li>
+
+                </ul>
+
+            </div>
+
+            <div>
+
+                <h3>Categories</h3>
+
+                <ul>
+
+                    <li><a href="#categories">Nature</a></li>
+                    <li><a href="#categories">Anime</a></li>
+                    <li><a href="#categories">Pokémon</a></li>
+                    <li><a href="#categories">Cartoons</a></li>
+                    <li><a href="#categories">Space</a></li>
+                    <li><a href="#categories">Travel</a></li>
+                    <li><a href="#categories">Technology</a></li>
+                    <li><a href="#categories">Architecture</a></li>
+                    <li><a href="#categories">Cars</a></li>
+                    <li><a href="#categories">Wildlife</a></li>
+                    <li><a href="#categories">Food</a></li>
+                    <li><a href="#categories">Ocean</a></li>
+                    <li><a href="#categories">Mountains</a></li>
+
+                </ul>
+
+            </div>
+
+            <div>
+
+                <h3>Follow Us</h3>
+
+                <div class="social-icons">
+
+                    <a href="https://github.com/monicachelle" target="_blank" rel="noopener noreferrer"><i class="ri-github-fill"></i></a>
+                    <a href="https://www.linkedin.com/in/monica-raghini-chelle-560328404/" target="_blank" rel="noopener noreferrer"><i class="ri-linkedin-fill"></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            © 2026 MonicaVerse
+
+        </div>
+
+    </footer>
+
+    
+
+    <div id="lightbox" class="lightbox">
+
+        <button id="closeLightbox" class="close-btn">
+
+            <i class="ri-close-line"></i>
+
+        </button>
+
+        <button id="prevImage" class="lightbox-btn left">
+
+            <i class="ri-arrow-left-s-line"></i>
+
+        </button>
+
+        <img
+            id="lightboxImage"
+            src=""
+            alt="Gallery Image">
+
+        <button id="nextImage" class="lightbox-btn right">
+
+            <i class="ri-arrow-right-s-line"></i>
+
+        </button>
+
+        <div class="lightbox-caption">
+
+            <h3 id="lightboxTitle">
+
+                Image Title
+
+            </h3>
+
+            <p id="imageCounter">
+
+                1 / 120
+
+            </p>
+
+        </div>
+
+    </div>
+
+    
+
+    <script src="data/galleryData.js"></script>
+
+    <script src="js/gallery.js"></script>
+
+    <script src="js/filters.js"></script>
+
+    <script src="js/search.js"></script>
+
+    <script src="js/lightbox.js"></script>
+
+    <script src="js/favorites.js"></script>
+
+    <script src="js/darkmode.js"></script>
+
+    <script src="js/script.js"></script>
+
+    <button id="backToTop" class="icon-btn">
+        <i class="ri-arrow-up-line"></i>
+    </button>
+
+</body>
+
+</html>
